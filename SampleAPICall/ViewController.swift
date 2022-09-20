@@ -7,24 +7,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var food: UITextField!
     let dp = DataProvider()
 //    let api = ApiManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        food.delegate = self
 //        api.performRequest()
-        dp.parseJSON { [self] in
-            
+      
+    }
+    
+    
+//    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+//
+//        dp.parseJSON(getFood: food.text!) {
+//
+//            if let foodArray = dp.foods {
+//                print(foodArray.hints)
+//
+//            }
+//        }
+//    }
+
+    @IBAction func getTapped(_ sender: UIButton) {
+        
+        dp.parseJSON(getFood: food.text!){ [self] in
             if let foodArray = dp.foods {
                 print(foodArray.hints)
 
             }
         }
     }
-
-
+    
 }
+
 
