@@ -8,10 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let dp = DataProvider()
+//    let api = ApiManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+//        api.performRequest()
+        dp.parseJSON { [self] in
+            
+            if let foodArray = dp.foods {
+                print(foodArray.hints)
+
+            }
+        }
     }
 
 
