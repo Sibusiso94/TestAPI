@@ -16,17 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter food" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HyT-qT-KPJ">
-                                <rect key="frame" x="89" y="405" width="213" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter food" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HyT-qT-KPJ">
+                                <rect key="frame" x="30" y="72" width="286" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-Dm-wFi">
-                                <rect key="frame" x="148" y="486" width="95" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ygy-45-lef">
+                                <rect key="frame" x="16" y="131" width="358" height="649"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="customCell" rowHeight="124" id="kvy-Qh-5me" customClass="CustomTableViewCell" customModule="SampleAPICall" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="358" height="124"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kvy-Qh-5me" id="d3L-Lr-pbM">
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="124"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVF-Kp-cz2">
+                                                    <rect key="frame" x="25" y="51" width="318" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="aVF-Kp-cz2" secondAttribute="bottom" constant="52.670000000000002" id="Kzg-mg-SoF"/>
+                                                <constraint firstItem="aVF-Kp-cz2" firstAttribute="top" secondItem="d3L-Lr-pbM" secondAttribute="top" constant="51" id="gOQ-qI-Mt5"/>
+                                                <constraint firstAttribute="trailing" secondItem="aVF-Kp-cz2" secondAttribute="trailing" constant="15" id="jcJ-Nq-rbn"/>
+                                                <constraint firstItem="aVF-Kp-cz2" firstAttribute="leading" secondItem="d3L-Lr-pbM" secondAttribute="leading" constant="25" id="vUs-7i-sOX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="foodText" destination="aVF-Kp-cz2" id="V2f-Hm-KMU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-Dm-wFi">
+                                <rect key="frame" x="324" y="72" width="50" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Get food "/>
+                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
                                 <connections>
                                     <action selector="getTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsf-Tc-05b"/>
                                 </connections>
@@ -34,9 +63,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HyT-qT-KPJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="0k9-BZ-aq9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ygy-45-lef" secondAttribute="trailing" constant="16" id="89Q-sC-pW9"/>
+                            <constraint firstItem="Ygy-45-lef" firstAttribute="top" secondItem="ahb-Dm-wFi" secondAttribute="bottom" constant="24" id="Iko-do-02g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ygy-45-lef" secondAttribute="bottom" constant="30" id="N1j-E3-L4p"/>
+                            <constraint firstItem="Ygy-45-lef" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OyR-TD-Hza"/>
+                            <constraint firstItem="ahb-Dm-wFi" firstAttribute="leading" secondItem="HyT-qT-KPJ" secondAttribute="trailing" constant="8" id="PW4-fR-suf"/>
+                            <constraint firstItem="HyT-qT-KPJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="aRO-lU-xxW"/>
+                            <constraint firstItem="ahb-Dm-wFi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="egH-4b-yho"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ahb-Dm-wFi" secondAttribute="trailing" constant="16" id="fWy-U8-KB3"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="food" destination="HyT-qT-KPJ" id="z9E-IV-3FZ"/>
+                        <outlet property="tableView" destination="Ygy-45-lef" id="m3q-1z-ts7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -45,6 +86,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
