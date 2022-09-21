@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C7A327528DADAFC00301372 /* MealViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7A327328DADAFC00301372 /* MealViewCell.swift */; };
+		5C7A327628DADAFC00301372 /* MealViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C7A327428DADAFC00301372 /* MealViewCell.xib */; };
 		5C80FA0028D99AD8005891DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80F9FF28D99AD8005891DF /* AppDelegate.swift */; };
 		5C80FA0228D99AD8005891DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80FA0128D99AD8005891DF /* SceneDelegate.swift */; };
 		5C80FA0428D99AD8005891DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80FA0328D99AD8005891DF /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C7A327328DADAFC00301372 /* MealViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewCell.swift; sourceTree = "<group>"; };
+		5C7A327428DADAFC00301372 /* MealViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealViewCell.xib; sourceTree = "<group>"; };
 		5C80F9FC28D99AD8005891DF /* SampleAPICall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAPICall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C80F9FF28D99AD8005891DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C80FA0128D99AD8005891DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				5C80FA1328D99AF4005891DF /* Food.swift */,
 				5C80FA1928D9DEEA005891DF /* Hints.swift */,
 				5C80FA1528D9D46E005891DF /* DataProvider.swift */,
+				5C7A327328DADAFC00301372 /* MealViewCell.swift */,
+				5C7A327428DADAFC00301372 /* MealViewCell.xib */,
 			);
 			path = SampleAPICall;
 			sourceTree = "<group>";
@@ -140,6 +146,7 @@
 				5C80FA0C28D99ADA005891DF /* LaunchScreen.storyboard in Resources */,
 				5C80FA0928D99ADA005891DF /* Assets.xcassets in Resources */,
 				5C80FA0728D99AD8005891DF /* Main.storyboard in Resources */,
+				5C7A327628DADAFC00301372 /* MealViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +164,7 @@
 				5C80FA1628D9D46E005891DF /* DataProvider.swift in Sources */,
 				5C80FA0028D99AD8005891DF /* AppDelegate.swift in Sources */,
 				5C80FA0228D99AD8005891DF /* SceneDelegate.swift in Sources */,
+				5C7A327528DADAFC00301372 /* MealViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
