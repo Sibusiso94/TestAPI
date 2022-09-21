@@ -13,6 +13,10 @@
 		5C80FA0728D99AD8005891DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C80FA0528D99AD8005891DF /* Main.storyboard */; };
 		5C80FA0928D99ADA005891DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C80FA0828D99ADA005891DF /* Assets.xcassets */; };
 		5C80FA0C28D99ADA005891DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C80FA0A28D99ADA005891DF /* LaunchScreen.storyboard */; };
+		5C80FA1428D99AF4005891DF /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80FA1328D99AF4005891DF /* Food.swift */; };
+		5C80FA1628D9D46E005891DF /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80FA1528D9D46E005891DF /* DataProvider.swift */; };
+		5C80FA1A28D9DEEA005891DF /* Hints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80FA1928D9DEEA005891DF /* Hints.swift */; };
+		5C80FA1E28D9EB68005891DF /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80FA1D28D9EB68005891DF /* ApiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5C80FA0828D99ADA005891DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C80FA0B28D99ADA005891DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C80FA0D28D99ADA005891DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C80FA1328D99AF4005891DF /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		5C80FA1528D9D46E005891DF /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		5C80FA1928D9DEEA005891DF /* Hints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hints.swift; sourceTree = "<group>"; };
+		5C80FA1D28D9EB68005891DF /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				5C80FA0828D99ADA005891DF /* Assets.xcassets */,
 				5C80FA0A28D99ADA005891DF /* LaunchScreen.storyboard */,
 				5C80FA0D28D99ADA005891DF /* Info.plist */,
+				5C80FA1D28D9EB68005891DF /* ApiManager.swift */,
+				5C80FA1328D99AF4005891DF /* Food.swift */,
+				5C80FA1928D9DEEA005891DF /* Hints.swift */,
+				5C80FA1528D9D46E005891DF /* DataProvider.swift */,
 			);
 			path = SampleAPICall;
 			sourceTree = "<group>";
@@ -139,6 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C80FA0428D99AD8005891DF /* ViewController.swift in Sources */,
+				5C80FA1428D99AF4005891DF /* Food.swift in Sources */,
+				5C80FA1A28D9DEEA005891DF /* Hints.swift in Sources */,
+				5C80FA1E28D9EB68005891DF /* ApiManager.swift in Sources */,
+				5C80FA1628D9D46E005891DF /* DataProvider.swift in Sources */,
 				5C80FA0028D99AD8005891DF /* AppDelegate.swift in Sources */,
 				5C80FA0228D99AD8005891DF /* SceneDelegate.swift in Sources */,
 			);

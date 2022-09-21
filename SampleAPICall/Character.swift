@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Character: Codable {
+    let char_id: Int
+    let name: String
+}
