@@ -36,8 +36,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         dp.parseJSON(getFood: food.text!){ [self] in
             if let foodArray = dp.foods {
-                print(foodArray.hints)
-
+                
+                for foodHints in foodArray.hints{
+                                    print(foodHints.food.label)
+                    }
             }
         }
     }
