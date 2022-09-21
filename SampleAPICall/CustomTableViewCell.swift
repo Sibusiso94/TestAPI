@@ -11,13 +11,21 @@ class CustomTableViewCell: UITableViewCell {
     
     @IBOutlet weak var foodText: UILabel!
     
+    @IBOutlet weak var foodImg: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    func setUpCell(foodName:String){
+    func setUpCell(foodName:String, pic:String?){
         foodText.text = foodName
+        
+        if pic != nil{
+            foodImg.downloaded(from:pic!)
+        } else{
+            foodImg.image = UIImage(systemName: "circle.fill")
+        }
     }
     
     
