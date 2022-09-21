@@ -18,7 +18,7 @@ struct Hint: Codable {
 struct FoodClass: Codable {
     let label, knownAs: String
     let nutrients: Nutrients
-//    let image: String
+    let image: String?
 
 //    enum CodingKeys: String, CodingKey {
 //        case foodID = "foodId"
