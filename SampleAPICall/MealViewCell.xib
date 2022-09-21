@@ -84,6 +84,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mealCaloryLabel" destination="Nhd-xo-X8Z" id="6XY-Jd-g2C"/>
+                <outlet property="mealCategoryLabel" destination="yDC-eW-16u" id="TFK-qW-w7w"/>
+                <outlet property="mealImageView" destination="OiR-mh-vlL" id="aN9-Dn-btO"/>
+                <outlet property="mealTitleLabel" destination="uFV-EJ-Y8S" id="znf-pP-wF5"/>
+                <outlet property="mealView" destination="jRw-hO-tRl" id="jcd-P7-DaJ"/>
+            </connections>
             <point key="canvasLocation" x="107.69230769230769" y="15.639810426540283"/>
         </tableViewCell>
     </objects>
