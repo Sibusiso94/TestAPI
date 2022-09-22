@@ -94,9 +94,43 @@
             </objects>
             <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
         </scene>
+        <!--Custom View Label Controller-->
+        <scene sceneID="xWH-vu-fHV">
+            <objects>
+                <viewController title="Custom View Label Controller" id="yJ5-Ut-Fkr" customClass="CustomViewController" customModule="SampleAPICall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SAr-pU-tiE">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCl-eM-S9y">
+                                <rect key="frame" x="20" y="253" width="350" height="557"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sw9-4V-KN0"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="sw9-4V-KN0" firstAttribute="trailing" secondItem="tCl-eM-S9y" secondAttribute="trailing" constant="20" id="1Pi-xM-Bvz"/>
+                            <constraint firstItem="tCl-eM-S9y" firstAttribute="bottom" secondItem="sw9-4V-KN0" secondAttribute="bottom" id="7uw-mU-hRc"/>
+                            <constraint firstItem="tCl-eM-S9y" firstAttribute="leading" secondItem="sw9-4V-KN0" secondAttribute="leading" constant="20" id="ITf-es-IB1"/>
+                            <constraint firstItem="sw9-4V-KN0" firstAttribute="bottom" secondItem="tCl-eM-S9y" secondAttribute="bottom" id="pR1-i9-eE8"/>
+                            <constraint firstItem="tCl-eM-S9y" firstAttribute="height" secondItem="SAr-pU-tiE" secondAttribute="height" multiplier="0.66" id="s0l-tI-6lW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customViewContainer" destination="tCl-eM-S9y" id="aDl-h7-ARc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uaZ-hY-IOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741.53846153846155" y="-2.1327014218009479"/>
+        </scene>
     </scenes>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

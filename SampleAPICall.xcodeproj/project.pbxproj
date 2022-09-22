@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2290D01228DC2A290043460C /* CustomViewLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290D01128DC2A290043460C /* CustomViewLabels.swift */; };
+		2290D01428DC2A8F0043460C /* CustomViewLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2290D01328DC2A8F0043460C /* CustomViewLabel.xib */; };
+		2290D01628DC2C2D0043460C /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290D01528DC2C2D0043460C /* UIViewExtention.swift */; };
+		2290D01828DC367E0043460C /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290D01728DC367E0043460C /* CustomViewController.swift */; };
 		5C80FA0028D99AD8005891DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80F9FF28D99AD8005891DF /* AppDelegate.swift */; };
 		5C80FA0228D99AD8005891DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80FA0128D99AD8005891DF /* SceneDelegate.swift */; };
 		5C80FA0428D99AD8005891DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80FA0328D99AD8005891DF /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2290D01128DC2A290043460C /* CustomViewLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewLabels.swift; sourceTree = "<group>"; };
+		2290D01328DC2A8F0043460C /* CustomViewLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewLabel.xib; sourceTree = "<group>"; };
+		2290D01528DC2C2D0043460C /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
+		2290D01728DC367E0043460C /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		5C80F9FC28D99AD8005891DF /* SampleAPICall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAPICall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C80F9FF28D99AD8005891DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C80FA0128D99AD8005891DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,9 +55,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2290D01028DC29F20043460C /* Resuableble */ = {
+			isa = PBXGroup;
+			children = (
+				2290D01128DC2A290043460C /* CustomViewLabels.swift */,
+				2290D01328DC2A8F0043460C /* CustomViewLabel.xib */,
+				2290D01528DC2C2D0043460C /* UIViewExtention.swift */,
+				2290D01728DC367E0043460C /* CustomViewController.swift */,
+			);
+			path = Resuableble;
+			sourceTree = "<group>";
+		};
 		5C80F9F328D99AD8005891DF = {
 			isa = PBXGroup;
 			children = (
+				2290D01028DC29F20043460C /* Resuableble */,
 				5C80F9FE28D99AD8005891DF /* SampleAPICall */,
 				5C80F9FD28D99AD8005891DF /* Products */,
 			);
@@ -142,6 +162,7 @@
 			files = (
 				5C80FA0C28D99ADA005891DF /* LaunchScreen.storyboard in Resources */,
 				5C80FA0928D99ADA005891DF /* Assets.xcassets in Resources */,
+				2290D01428DC2A8F0043460C /* CustomViewLabel.xib in Resources */,
 				5C80FA0728D99AD8005891DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,10 +175,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C80FA0428D99AD8005891DF /* ViewController.swift in Sources */,
+				2290D01628DC2C2D0043460C /* UIViewExtention.swift in Sources */,
 				5C80FA1428D99AF4005891DF /* Food.swift in Sources */,
 				B8E7C21828DB01A800A1AFF1 /* CustomTableViewCell.swift in Sources */,
+				2290D01228DC2A290043460C /* CustomViewLabels.swift in Sources */,
 				5C80FA1A28D9DEEA005891DF /* Hints.swift in Sources */,
 				5C80FA1E28D9EB68005891DF /* ApiManager.swift in Sources */,
+				2290D01828DC367E0043460C /* CustomViewController.swift in Sources */,
 				5C80FA1628D9D46E005891DF /* DataProvider.swift in Sources */,
 				5C80FA0028D99AD8005891DF /* AppDelegate.swift in Sources */,
 				5C80FA0228D99AD8005891DF /* SceneDelegate.swift in Sources */,
