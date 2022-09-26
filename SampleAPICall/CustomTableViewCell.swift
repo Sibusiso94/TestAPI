@@ -24,7 +24,7 @@ class CustomTableViewCell: UITableViewCell {
         if pic != nil{
             foodImg.downloaded(from:pic!)
         } else{
-            foodImg.image = UIImage(systemName: "circle.fill")
+            foodImg.image = UIImage(systemName: "questionmark")
         }
     }
     

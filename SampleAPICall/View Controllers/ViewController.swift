@@ -38,17 +38,16 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
       
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetail", sender: self)
+    }
     
-//    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
-//
-//        dp.parseJSON(getFood: food.text!) {
-//
-//            if let foodArray = dp.foods {
-//                print(foodArray.hints)
-//
-//            }
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailViewController{
+            destination.selectedFood = dp.foods?.hints[tableView.indexPathForSelectedRow!.row]
+           
+        }
+    }
 
     @IBAction func getTapped(_ sender: UIButton) {
         
@@ -88,6 +87,7 @@ extension UIImageView {
         }.resume()
     }
     
+
     
     func downloaded(from link: String, contentMode mode: ContentMode = .scaleAspectFit) {
         guard let url = URL(string: link) else { return }

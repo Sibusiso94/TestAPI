@@ -29,7 +29,7 @@ struct FoodClass: Codable {
 // MARK: - Nutrients
 struct Nutrients: Codable {
     let ENERC_KCAL: Double
-//    let procnt, fat, chocdf, fibtg: Double
+    let procnt, fat, chocdf, fibtg: Double?
 
 //    enum CodingKeys: String, CodingKey {
 //        case enercKcal = "ENERC_KCAL"
