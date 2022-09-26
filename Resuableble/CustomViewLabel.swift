@@ -7,7 +7,8 @@
 
 import UIKit
 
-final class CustomViewLabels: UIView {
+@IBDesignable
+class CustomViewLabel: UIView {
     
     override func awakeFromNib() {
         
