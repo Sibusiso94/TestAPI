@@ -32,7 +32,6 @@ class ViewController: UIViewController {
                                
                     tableView.reloadData()
                     self.viewDidLoad()
-                    print(foodHints.food.image)
                 }
             }
         }
@@ -43,10 +42,11 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let food = dp.foods?.hints[indexPath.row]
+        let serving = "per serving"
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "foodItemCell") as! FoodItemCell
     
-        cell.setUpCell(foodName: (food?.food.label)!, pic: food?.food.image )
+        cell.setUpCell(foodName: (food?.food.label)!, pic: food?.food.image, calory: food?.food.nutrients.ENERC_KCAL ?? 0.0, serving: serving)
         return cell
     }
 

@@ -25,6 +25,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y3T-AD-OJY">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" secondItem="y3T-AD-OJY" secondAttribute="height" multiplier="1:1" id="2TH-d9-kbf"/>
                                             <constraint firstAttribute="width" constant="50" id="8bs-AK-k0x"/>
                                             <constraint firstAttribute="height" constant="50" id="FR5-Ke-ToY"/>
                                         </constraints>
@@ -45,23 +46,22 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="Jj5-5r-WYk"/>
-                                        </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwx-Ua-fWS">
                                         <rect key="frame" x="230" y="30.666666666666664" width="70" height="19.333333333333336"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="3Si-6H-DRQ"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="hxD-kz-PjL" firstAttribute="leading" secondItem="y3T-AD-OJY" secondAttribute="trailing" constant="20" id="kwl-kL-QgC"/>
+                                    <constraint firstAttribute="trailing" secondItem="nBS-Nq-evL" secondAttribute="trailing" constant="90" id="ziS-lT-kX2"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jwx-Ua-fWS" secondAttribute="trailing" constant="2" id="Fh0-2k-hKe"/>
                             <constraint firstItem="C0G-Wj-74i" firstAttribute="top" secondItem="Wum-cG-EeI" secondAttribute="top" constant="1" id="WI4-A6-QIc"/>
                             <constraint firstAttribute="trailing" secondItem="C0G-Wj-74i" secondAttribute="trailing" constant="2" id="Yq2-fs-GOt"/>
                             <constraint firstItem="C0G-Wj-74i" firstAttribute="leading" secondItem="Wum-cG-EeI" secondAttribute="leading" constant="2" id="cge-0d-Wla"/>

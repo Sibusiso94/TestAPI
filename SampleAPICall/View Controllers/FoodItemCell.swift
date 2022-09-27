@@ -31,8 +31,10 @@ class FoodItemCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setUpCell(foodName:String, pic:String?) {
+    func setUpCell(foodName:String, pic:String?, calory: Double, serving: String) {
         foodTitle.text = foodName
+        
+        foodCalory.text = "Calories: \(calory)"
         
         if pic != nil{
             //            foodImg.downloaded(from:pic!)
