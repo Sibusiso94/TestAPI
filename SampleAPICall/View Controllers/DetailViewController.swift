@@ -29,7 +29,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if selectedFood?.food.image != nil{
-            itemsImageView.downloaded(from:(selectedFood?.food.image!)!)
+//            itemsImageView.downloaded(from:(selectedFood?.food.image!)!)
+            itemsImageView.loadImage(fromURL: selectedFood?.food.image! ?? "")
         } else{
             itemsImageView.image = UIImage(systemName: "questionmark")
         }
@@ -40,7 +41,6 @@ class DetailViewController: UIViewController {
         nutrientLabel3.text = "\(selectedFood!.food.nutrients.chocdf ?? 0.00)"
         nutrientLabel4.text = "\(selectedFood!.food.nutrients.fat ?? 0.00)"
         
-       
     }
     
 

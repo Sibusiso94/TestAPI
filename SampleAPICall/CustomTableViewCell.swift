@@ -22,17 +22,15 @@ class CustomTableViewCell: UITableViewCell {
         foodText.text = foodName
         
         if pic != nil{
-            foodImg.downloaded(from:pic!)
+//            foodImg.downloaded(from:pic!)
+            foodImg.loadImage(fromURL: pic!)
         } else{
             foodImg.image = UIImage(systemName: "questionmark")
         }
     }
     
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        
-    }
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//    }
 
 }
